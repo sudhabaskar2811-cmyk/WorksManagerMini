@@ -1,0 +1,26 @@
+﻿@model WorksManagerMini.Models.Job
+<h2>Edit Job - @Model.Title</h2>
+<form method="post" enctype="multipart/form-data">
+    <input name="Title" class="form-control" value="@Model.Title" required /><br />
+    <input name="CustomerName" class="form-control" value="@Model.CustomerName" required /><br />
+    <input name="Phone" class="form-control" value="@Model.Phone" required /><br />
+    <input name="WorkType" class="form-control" value="@Model.WorkType" /><br />
+    <input name="AssignedTo" class="form-control" value="@Model.AssignedTo" placeholder="Assigned To" /><br />
+    <select name="Status" class="form-control">
+        <option value="Open">Open</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+    </select>
+    <br />
+    <textarea name="Description" class="form-control" placeholder="Description">@Model.Description</textarea><br />
+
+    <label>Current Proof:</label><br />
+    @if (Model.ProofImage != null)
+    {
+        <img src="/uploads/@Model.ProofImage" width="150" /><br /><br />
+    }
+    <label>Change Proof Image:</label>
+    <input type="file" name="proofFile" class="form-control" /><br />
+    <button class="btn btn-success">Update</button>
+    <a href="/Jobs" class="btn btn-secondary">Cancel</a>
+</form>

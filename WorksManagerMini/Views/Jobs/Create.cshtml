@@ -1,0 +1,12 @@
+﻿@model WorksManagerMini.Models.Job
+<h2>New Job</h2>
+<form method="post" enctype="multipart/form-data">
+    <input name="Title" class="form-control" placeholder="Job Title" required /><br />
+    <input name="CustomerName" class="form-control" placeholder="Customer Name" required /><br />
+    <input name="Phone" class="form-control" placeholder="Phone" required /><br />
+    <input name="WorkType" class="form-control" placeholder="Software Engineer / Software Testing" /><br />
+    <input name="AssignedTo" class="form-control" placeholder="Assigned To - Staff Name" /><br />
+    <textarea name="Description" class="form-control" placeholder="Work Description"></textarea><br />
+    <input type="file" name="proofFile" class="form-control" /><br />
+    <button class="btn btn-primary">Save</button>
+</form>

@@ -1,0 +1,9 @@
+﻿@model WorksManagerMini.Models.Job
+<h2>Are you sure to delete this job?</h2>
+<h3>@Model.Title - @Model.CustomerName</h3>
+<p>Customer: @Model.Phone</p>
+<br />
+<form method="post">
+    <button class="btn btn-danger">Yes, Delete it</button>
+    <a href="/Jobs" class="btn btn-secondary">Cancel</a>
+</form>

@@ -1,0 +1,29 @@
+﻿<h2>📊 Works Manager - Dashboard</h2>
+<br />
+<div class="row">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-body"><h4>Total Jobs</h4><h2>@ViewBag.Total</h2></div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-warning mb-3">
+            <div class="card-body"><h4>Open</h4><h2>@ViewBag.Open</h2></div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-info mb-3">
+            <div class="card-body"><h4>In Progress</h4><h2>@ViewBag.InProgress</h2></div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-body"><h4>Completed</h4><h2>@ViewBag.Completed</h2></div>
+        </div>
+    </div>
+</div>
+<br />
+<a href="/Jobs" class="btn btn-primary">Go to All Jobs</a>
+<br />
+<br />
+<a href="/Jobs/ExportToExcel" class="btn btn-dark">📥 Download Excel Report</a>

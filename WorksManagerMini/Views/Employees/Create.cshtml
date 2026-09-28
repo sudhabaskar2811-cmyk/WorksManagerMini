@@ -1,0 +1,25 @@
+﻿@model WorksManagerMini.Models.Employee
+
+<h2>Create Employee</h2>
+
+<form action="/Employees/Create" method="post">
+    <div>
+        <label>Name</label><br />
+        <input type="text" name="Name" />
+    </div>
+    <br />
+    <div>
+        <label>Phone</label><br />
+        <input type="text" name="Phone" />
+    </div>
+    <br />
+    <div>
+        <label>Role</label><br />
+        <input type="text" name="Role" />
+    </div>
+    <br />
+    <button type="submit">Save</button>
+</form>
+
+<br />
+<a href="/Employees">Back to List</a>
